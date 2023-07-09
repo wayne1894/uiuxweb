@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* #a1{
+           color: red;
+        }
+        .b1{
+            background-color: #464097;
+            color: #fff;
+        }
+        h1{
+            font-size: 12px;
+        }
+        body{
+            background-color: coral;
+        } */
+        /* #a2 span{
+            color: blue;
+            background-color: aquamarine;
+            font-size: 20px;
+        }
+        body div{
+            opacity: 0;
+        } */
+
+        /* #a2>p>span{
+            background-color: green;
+            font-size: 40px;
+        }
+        #a1+#a2{
+            background-color: black;
+        }
+        .b1{
+            background-color: red;
+        } */
+        /* #a2.b1>p>span,#a1,p.b1{
+           background-color: rgb(95, 11, 147); 
+        } */
+     
+    
+        /* .b1{
+            background-color: green;
+        }
+        .b1{
+            background-color: red;
+        }
+        h1{
+            background-color: black!important;
+        }
+        h1{
+            background-color: brown!important;
+        }
+     */
+     /* #a2{
+        background-color: darkred;
+        font-size: 1vw;
+     } */
+     #a2{
+        background-image: url(img/a1.jpg);
+        height: 500px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-image: linear-gradient(to right bottom, rgba(0, 0, 0,1), rgba(55, 65, 81,0.5)),url(img/a1.jpg);
+        background-image: linear-gradient(90deg, rgb(254, 191, 72) 0%, rgba(212, 79, 112, 0) 100%)
+    }
+
+    </style>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div id="a1" >我是div</div>
+    <h1 id="a2" class="b1">
+        我是h1
+        <p>我是h1 <span>裡</span>的p</p>
+        <span>我是h1裡的span</span>
+    </h1>
+    <p class="b1">我是p</p>
+</body>
+</html>
