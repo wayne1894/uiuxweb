@@ -9,3 +9,5 @@ UI/UX創新應用暨互動網站開發實戰班
 ### [05 CSS 網頁切版術 - 盒子模型](https://docs.google.com/presentation/d/1NStmXqBH5rLU-85vBdfoSZQP-AaLWyTbs7EXwhftf2M/edit?usp=sharing)
 ### [06 CSS 網頁切版術 - inline-block 排版](https://docs.google.com/presentation/d/1P95_hBKRUEYYAdCCTdUOKSMYx3qKKwJQnSIJXDn_7yA/edit?usp=sharing)
 ### [07 CSS 網頁切版術 - flexbox 排版](https://docs.google.com/presentation/d/1rDbJ0BbgMVTWXUtiBYpLirLE27dNROVuNxmHPn_OcOw/edit?usp=sharing)
+### [08 CSS 網頁切版術 - float 排版](https://docs.google.com/presentation/d/1K2791FHGLZXd2gbDKJCDANX0KltR4ZTm0yHS3lu5Q1I/edit?usp=sharing)
+### [09 CSS 網頁切版術 - position 排版](https://docs.google.com/presentation/d/1y4eGj7x37aA-QePayDt5FnvkcWu3z_uMv2KAybVFGXU/edit?usp=sharing)
