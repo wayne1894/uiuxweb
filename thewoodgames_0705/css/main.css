@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;500;900&display=swap');
+
+/* @font-face {
+font-family: 'AbelRegular';
+      src: url('fonts/abel-regular-webfont.eot');
+      src: url('fonts/abel-regular-webfont.eot?#iefix') format('embedded-opentype'),  url('fonts/abel-regular-webfont.woff') format('woff'),  url('fonts/abel-regular-webfont.ttf') format('truetype'),  url('fonts/abel-regular-webfont.svg#AbelRegular') format('svg');
+} */
+
 html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -10,6 +18,12 @@ html {
   -webkit-box-sizing: inherit;
   -moz-box-sizing: inherit;
   box-sizing: inherit;
+}
+
+body{
+  /* font-family: "AbelRegular" , serif; */
+  font-family: 'Noto Sans TC','Microsoft JhengHei', sans-serif;
+  font-weight: 500;
 }
 
 ul {
@@ -46,6 +60,13 @@ ul {
   text-decoration: none;
   font-size: 22px;
   display: block;
+  font-weight: 500;
+}
+.nav_text{
+  color: #000;
+}
+.nav_text_en{
+  color: #8a8000;
 }
 
 .main>.content img{
