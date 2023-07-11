@@ -42,6 +42,12 @@ ul {
   height: 60px;
   line-height: 60px;
 }
+.main>nav>ul>li>a.nav_item{
+  text-decoration: none;
+  font-size: 22px;
+  display: block;
+}
+
 .main>.content img{
   width: 100%;
 }
