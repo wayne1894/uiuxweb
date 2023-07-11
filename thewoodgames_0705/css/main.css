@@ -51,13 +51,23 @@ ul {
   border-bottom: 1px solid #8a8000;
   margin-bottom: 20px
 }
+  .main>nav>ul{
+    display: flex;
+  }
 .main>nav>ul>li{
-  display: inline-block;
-  width: 25%;
+
   text-align: center;
   height: 60px;
   line-height: 60px;
-  margin-right: -4px;
+
+  /* 給inline-block用的 */
+  /* display: inline-block;
+  width: 25%; 
+  margin-right: -4px;  */
+
+  /* 給flex用的 */
+  flex: 1;
+
 }
 .main>nav>ul>li>a.nav_item{
   text-decoration: none;
@@ -82,5 +92,12 @@ ul {
   width: 100%;
   margin-bottom: 30px;
   /* border-radius: 5px; */
+}
+
+
+@media (max-width:992px){
+  .main>nav>ul>li{
+    width: 100%;
+  }
 }
 
