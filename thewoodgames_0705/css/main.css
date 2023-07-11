@@ -32,9 +32,11 @@ ul {
   padding: 0;
 }
 .main{
-  width: 780px;
+  /* width: 780px; */
   /* background: gray; */
   margin: 0 auto;
+  width: 100%;
+  max-width: 780px;
 }
 .main>header{
   text-align: center;
