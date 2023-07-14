@@ -5,10 +5,16 @@
 }
 .item_row{
     padding: 15px;
-    border-bottom: 1px solid #8a8000;
+    /* border-top: 1px solid #8a8000; */
 }
-.item_row:last-child{
+/* .item_row:last-child{
     border-bottom: none;
+} */
+/* .item_row:first-child{
+    border-top: none;
+} */
+.item_row:not(:first-child){
+    border-top: 1px solid #8a8000;
 }
 .item_left{
    float: left;

@@ -1,0 +1,11 @@
+.nav_item{
+    position: relative;
+}
+.nav_item .nav_child{
+    display: none;
+    /* position: absolute; */
+}
+.nav_item:hover .nav_child{
+    display: block;
+}
+
