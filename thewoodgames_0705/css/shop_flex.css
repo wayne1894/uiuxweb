@@ -13,6 +13,11 @@
 }
 .item_mid{
     width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+.item_mid>div{
+    margin-top: auto;
 }
 .item_right{
     width: 40%;

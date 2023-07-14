@@ -1,0 +1,33 @@
+/* https://docs.google.com/presentation/d/1K2791FHGLZXd2gbDKJCDANX0KltR4ZTm0yHS3lu5Q1I/edit#slide=id.g22f0edd2551_0_0 */
+/* 這是float排版 */
+.shop_content>.item_wrap{
+    border: 1px solid #8a8000;
+}
+.item_row{
+    padding: 15px;
+    border-bottom: 1px solid #8a8000;
+}
+.item_row:last-child{
+    border-bottom: none;
+}
+.item_left{
+   float: left;
+   width: 20%;
+   padding-right: 15px;
+}
+.item_mid{
+   float: left;
+   width: 40%;
+}
+.item_right{
+   float: right;
+   width: 40%;
+}
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
