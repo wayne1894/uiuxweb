@@ -1,0 +1,18 @@
+/* https://docs.google.com/presentation/d/1rDbJ0BbgMVTWXUtiBYpLirLE27dNROVuNxmHPn_OcOw/edit#slide=id.g256dd3e0fe6_0_0 */
+/* 這是flex排版 */
+.shop_content>.item_wrap{
+    border: 1px solid #8a8000;
+    padding: 15px;
+}
+.item_row{
+    display: flex;
+}
+.item_left{
+    flex: 1;
+}
+.item_mid{
+    flex: 1;
+}
+.item_right{
+    flex: 1;
+}
