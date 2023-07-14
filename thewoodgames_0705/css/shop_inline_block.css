@@ -1,0 +1,25 @@
+/* https://docs.google.com/presentation/d/1P95_hBKRUEYYAdCCTdUOKSMYx3qKKwJQnSIJXDn_7yA/edit#slide=id.g22eba8c7387_0_69 */
+/* 這是line-block排版 */
+.shop_content>.item_wrap{
+    border: 1px solid #8a8000;
+    padding: 15px;
+}
+.item_left{
+    display: inline-block;
+    width: 20%;
+    margin-right: -4px;
+    vertical-align: top;
+    padding-right: 15px;
+}
+.item_mid{
+    display: inline-block;
+    width: 40%;
+    margin-right: -4px;
+    vertical-align: top;
+}
+.item_right{
+    display: inline-block;
+    width: 40%;
+    margin-right: -4px;
+    vertical-align: top;
+}
