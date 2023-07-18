@@ -27,6 +27,32 @@ html {
   header .header_left .logo{
     width: 100px;
   }
+  .header_left a:hover .logo_text{
+      -webkit-animation: hover-shine 1.5s cubic-bezier(0, 0.58, 1, 0.44) infinite;
+      animation: hover-shine 1.5s cubic-bezier(0, 0.58, 1, 0.44) infinite;
+  }
+  @keyframes hover-shine {
+    0%{
+      background: #52b14c;
+      color: white;
+    }
+    25%{
+      background: #ffdd3d;
+      color: white;
+    }
+    50%{
+      background: #f8b158;
+      color: white;
+    }
+    75%{
+      background: #f15b3a;
+      color: white;
+    }
+    100%{
+      background: #28b2ee;
+      color: white;
+    }
+  }
   header .header_left a{
     display: flex;
     margin: 0 55px;
