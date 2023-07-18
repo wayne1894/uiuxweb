@@ -39,6 +39,8 @@ html {
   }
   header .header_right{
     margin-left: auto;
+    display: flex;
+    align-items: center;
   }
    header .header_left .logo_text{
     border: 1px solid #ccc;
