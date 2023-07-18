@@ -127,5 +127,19 @@ html {
   @media(max-width:768px){
     #header_check + label{
       display: block;
+      position: absolute;
+      right: 10px;
+    }
+    .header_right{
+      display: none;
+    }
+    .header_mid>ul{
+      position: absolute;
+      left: 0;
+      top: 75px;
+      background-color: red;
+      width: 100%;
+      flex-direction: column;
+      text-align: center;
     }
   }
