@@ -21,26 +21,33 @@ html {
   /* header 區塊 */
   header{
     display: flex;
+    height: 75px;
+    align-items: center;
   }
   header .header_left .logo{
     width: 100px;
   }
   header .header_left a{
-    width: 280px;
     display: flex;
-    margin: 15px 20px;
-  }
-  header .header_mid{
-    display: flex;
-    align-items: center;
+    margin: 0 55px;
   }
   header .header_mid>ul{
     display: flex;
   }
   header .header_right{
     margin-left: auto;
-    display: flex;
-    align-items: center;
+  }
+  header .header_right a{
+    border: 2px solid orange;
+    border-radius: 30px;
+    padding: 20px;
+    color: black;
+    font-weight: bold;
+    margin-right: 20px;
+  }
+  header .header_right a:hover{
+    background: linear-gradient(135deg,#f6d365,#fda085);
+    color: white;
   }
    header .header_left .logo_text{
     border: 1px solid #ccc;
