@@ -75,7 +75,7 @@ html {
     background: linear-gradient(135deg,#f6d365,#fda085);
     color: white;
   }
-   header .header_left .logo_text{
+  header .header_left .logo_text{
     border: 1px solid #ccc;
     color: #595959;
     height: 30px;
@@ -83,6 +83,14 @@ html {
     padding: 0 5px;
     font-weight: bold;
     margin-left: 10px;
+  }
+
+  /* 漢堡選單 */
+  #header_check{
+    display: none;
+  }
+  #header_check + label{
+    display: none;
   }
 
   /* main 區塊 */
@@ -114,4 +122,10 @@ html {
     letter-spacing: 0.7rem;
     font-size: 22px;
     display: inline-block;
+  }
+
+  @media(max-width:768px){
+    #header_check + label{
+      display: block;
+    }
   }
