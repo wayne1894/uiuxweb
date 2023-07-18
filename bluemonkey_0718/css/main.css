@@ -18,9 +18,25 @@ html {
     padding: 0;
   }
 
+  /* header 區塊 */
   header{
     display: flex;
   }
   header .header_left .logo{
     width: 100px;
+  }
+
+  /* main 區塊 */
+  .section_banner{
+    background-color: #1b96e1;
+  }
+  .section_banner img{
+    width: 100%;
+  }
+
+  /* 共用結構 */
+  .container{
+    margin: 0 auto;
+    max-width: 750px;
+    width: 100%;
   }
