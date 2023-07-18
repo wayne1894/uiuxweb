@@ -124,16 +124,17 @@ html {
     display: inline-block;
   }
 
-  @media(max-width:768px){
+  @media(max-width:992px){
     #header_check + label{
       display: block;
       position: absolute;
       right: 10px;
+      cursor: pointer;
     }
     .header_right{
       display: none;
     }
-    .header_mid>ul{
+    header .header_mid>ul{
       position: absolute;
       left: 0;
       top: 75px;
@@ -141,5 +142,9 @@ html {
       width: 100%;
       flex-direction: column;
       text-align: center;
+      display: none;
+    }
+    #header_check:checked+label+ul{
+      display: flex;
     }
   }
