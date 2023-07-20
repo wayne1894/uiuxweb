@@ -104,40 +104,18 @@ html {
   }
 
   /* 表單區塊 */
-  .bm_form input{
-    outline: none;
-    border: none;
+  .bm_form input.form-control{
     border: 1px solid #000;
+    background-color: #e0e0e0;
     padding: 10px 24px;
-    background: #d6d6d6;
+    outline: none;
     font-size: 22px;
   }
-  .input_wrap input{
-    display: block;
-    margin-bottom: 10px;
+  .bm_form input.form-control:focus{
+    border-color: #0693e3;
+    box-shadow: 0 0 0 1.5px #0693e3;
   }
-  .input_wrap input:focus{
-    border-color: #1b96e1;
-    box-shadow: 0 0 0 1.5px #1b96e1;
-  }
-  .con-chose input{
-    display: none;
-  }
-  .con-chose label span{
-    display: flex;
-    align-items: center;
-    padding: 20px;
-  
-  }
-  .con-chose label span::before{
-    content: "";
-    background-color: #fff;
-    width: 1.25em;
-    height: 1.25em;
-    border-radius: 50%;
-    margin-right: 0.375em;
-    box-shadow: inset 0 0 0 0.125em #898989;
-  }
+ 
 
   /* 共用結構 */
   a{
