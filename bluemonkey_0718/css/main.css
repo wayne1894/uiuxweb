@@ -104,7 +104,10 @@ html {
   }
 
   /* 表單區塊 */
-  .bm_form input.form-control{
+
+  /* 寫法一 */
+
+  /* .bm_form input.form-control{
     border: 1px solid #000;
     background-color: #e0e0e0;
     padding: 10px 24px;
@@ -114,8 +117,39 @@ html {
   .bm_form input.form-control:focus{
     border-color: #0693e3;
     box-shadow: 0 0 0 1.5px #0693e3;
-  }
- 
+  } */
+
+   /* 寫法二 */
+ .bm_form .input_group{
+    background-color: #e0e0e0;
+    margin-bottom: 15px;
+    position: relative;
+ }
+ .bm_form .input_group::before{
+   content: "";
+   width: 25px;
+   height: 25px;
+   /* background-color: red; */
+   background: url(https://cdn-icons-png.flaticon.com/512/483/483408.png);
+   background-size: cover;
+   display: inline-block;
+   position: absolute;
+   left: 5px;
+   top: 7px;
+ }
+ .bm_form input.form-control{
+   outline: none;
+   border: none;
+   background-color: transparent;
+   width: 100%;
+   padding: 10px 24px;
+   padding-left: 35px;
+   border: 1px solid #000;
+ }
+ .bm_form input.form-control:focus{
+   border-color: #0693e3;
+   box-shadow: 0 0 0 1.5px #0693e3;
+ }
 
   /* 共用結構 */
   a{
