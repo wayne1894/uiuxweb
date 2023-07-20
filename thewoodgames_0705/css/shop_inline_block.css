@@ -1,5 +1,12 @@
 /* https://docs.google.com/presentation/d/1P95_hBKRUEYYAdCCTdUOKSMYx3qKKwJQnSIJXDn_7yA/edit#slide=id.g22eba8c7387_0_69 */
 /* 這是line-block排版 */
+
+
+/* 暫時hide */
+.nav_item .nav_child{
+    display: none;
+}
+
 .shop_content>.item_wrap{
     border: 1px solid #8a8000;
     padding: 15px;
@@ -7,6 +14,7 @@
 .item_left{
     display: inline-block;
     width: 20%;
+    width: 150px;
     margin-right: -4px;
     vertical-align: top;
     padding-right: 15px;
@@ -14,12 +22,30 @@
 .item_mid{
     display: inline-block;
     width: 40%;
+    width: calc(100% - 150px - 250px);
     margin-right: -4px;
     vertical-align: top;
 }
 .item_right{
     display: inline-block;
     width: 40%;
+    width: 250px;
     margin-right: -4px;
     vertical-align: top;
+}
+
+@media(max-width:500px){
+    .item_left{
+        width: 100%;
+        padding-right: 0;
+        margin-right: 0;
+    }
+    .item_mid{
+        width: 100%;
+        margin-right: 0px;
+    }
+    .item_right{
+        width: 100%;
+        margin-right: 0px;
+    }
 }

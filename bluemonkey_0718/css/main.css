@@ -173,6 +173,7 @@ html {
    border-radius: 50%;
    vertical-align: middle;
    transition: 0.25s ease;
+   background-color: white;
  }
  .con-chose label:hover, .con-chose input:checked+label{
    background: #dfdfdf;
