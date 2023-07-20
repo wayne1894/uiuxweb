@@ -154,6 +154,12 @@ html {
  .con-chose input{
    display: none;
  }
+ .con-chose label{
+   padding: 10px 13px;
+   display: inline-block;
+   border-radius: 30px;
+   cursor: pointer;
+ }
  .con-chose label>span{
   vertical-align: middle;
  }
@@ -167,6 +173,9 @@ html {
    border-radius: 50%;
    vertical-align: middle;
    transition: 0.25s ease;
+ }
+ .con-chose label:hover, .con-chose input:checked+label{
+   background: #dfdfdf;
  }
  .con-chose input:checked+label::before{
   border: 7px solid rgb(18, 80, 146);
