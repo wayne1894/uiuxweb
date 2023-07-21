@@ -1,32 +1,66 @@
 <!DOCTYPE html>
-<html >
-
+<html lang="zh-Hant-TW">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-
 <body>
-    <script type="text/javascript" src="https://unpkg.com/real-turtle"></script>
-    <canvas id="real-turtle"></canvas>
-    <script type="text/javascript" src="https://unpkg.com/real-turtle/build/helpers/simple.js"></script>
+<script src="https://unpkg.com/real-turtle"></script>
+<canvas id="real-turtle"></canvas>
+<script src="https://unpkg.com/real-turtle/build/helpers/simple.js"></script>
 
+<script>
+turtle.setSpeed(0.95); //設定速度
 
-    <script>
+// 剛剛畫的圖
+// var i=0;
+// while (i<600){
+//     turtle.forward(i);
+//     turtle.left(90);
+//     i = i + 3
+// }
 
-turtle.setSpeed(0.99);
+// var a1 = 160;
+// var b1 = 85;
 
-let i=0;
-while (i<600){
-    turtle.forward(i);
-    turtle.left(91);
-    i = i + 1
+//console.log(a1 + b1);
+// alert("我會跳出視窗")
+
+// turtle.fd(a1);
+// turtle.right(b1);
+// turtle.fd(a1);
+// turtle.right(b1);
+// turtle.fd(a1);
+// turtle.right(b1);
+// turtle.fd(a1);
+
+var length = 0;
+var angle = 87;
+var step = 3
+
+// while(length < 500 ){ //括號裡的代表要執行的條件，如果是 true 的話就執行。
+//     turtle.fd(length);
+//     turtle.left(angle);
+//     length = length + step;
+// }
+
+// for(var i=0 ;i < 500 ; i = i + 1){ //括號裡的第二個區塊為執行條件
+//     turtle.fd(length);
+//     turtle.left(angle);
+//     length = length + step;
+//     //console.log(i)
+// }
+for(var i=0 ;i < 500 ; i = i + 10){
+    turtle
+            .arc(i ,360,true) // 畫一個半徑為15的圓
+            .right(90)  //向右轉90度
+            .penUp()  //把筆拿開
+            .fd(10) //前進
+            .penDown()  //把筆放下
+            .left(90) //向左轉90度(轉正)
 }
 
-
-    </script>
+</script>
 </body>
-
 </html>
