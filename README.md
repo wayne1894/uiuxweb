@@ -18,4 +18,7 @@ UI/UX創新應用暨互動網站開發實戰班
 ### [14 Javascript 創意程式練習題 - array ](https://docs.google.com/presentation/d/1gSOFJ_hS_FjKfhv6GE71VH__PXlo-VAKSA0m-X6tOYk/edit?usp=sharing)
 ### [15 Javascript 創意程式練習題 - 物件 ](https://docs.google.com/presentation/d/1TiZILDGhvjcjZ2ggBPlvx6y5Ky_cM27bWBb0pTj8V9Y/edit#slide=id.g25a88267e46_0_0)
 ### [16 Javascript 創意程式練習題 - 內建物件](https://docs.google.com/presentation/d/1_nYnisdMsaGvcRvr2V261YZhr9oPrie6OK672FGjZpM/edit?usp=sharing)
+### [17 了解版本控管](https://docs.google.com/presentation/d/1ZsHeq90WHfhKPU7UQtRuEHJ5Ki2OasdN_sQsnH2ksW8/)
+
+
 
