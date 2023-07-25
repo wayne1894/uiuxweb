@@ -1,8 +1,31 @@
 @import "variable";
 
-body{
-    background-color: $red;
-    h1{
-        background-color: blue;
-    }
-}
+// body{
+//     background-color: aqua;
+// }
+
+// @media(min-width: $sm){
+//     body{
+//         background-color: red;
+//     }
+// }
+// @media(min-width: $md){
+//     body{
+//         background-color: rgb(207, 213, 35);
+//     }
+// }
+// @media(min-width: $lg){
+//     body{
+//         background-color: rgb(61, 45, 141);
+//     }
+// }
+// @media(min-width: $xl){
+//     body{
+//         background-color: rgb(141, 38, 120);
+//     }
+// }
+// @media(min-width: $xxl){
+//     body{
+//         background-color: rgb(16, 162, 111);
+//     }
+// }
