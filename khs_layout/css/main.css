@@ -12,16 +12,14 @@ a {
 header {
   width: 100%;
   height: 100vh;
-  background-image: url(https://khsmusicweb.blob.core.windows.net/public/uploads/indexManage/1528785019552.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 header nav {
   display: flex;
   align-items: center;
   gap: 15px;
   height: 75px;
+  position: relative;
+  z-index: 10;
 }
 header nav.p-35 {
   padding: 0 35px;
@@ -81,6 +79,22 @@ header nav .nav_search {
 }
 header nav .nav_search:hover {
   opacity: 0.2;
+}
+header .swiper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 0;
+}
+header .swiper-slide {
+  background-position: center;
+  background-size: cover;
+}
+header .swiper-slide img {
+  display: block;
+  width: 100%;
 }
 header .go_down {
   position: absolute;

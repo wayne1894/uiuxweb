@@ -1,16 +1,18 @@
 header {
     width: 100%;
     height: 100vh;
-    background-image: url(https://khsmusicweb.blob.core.windows.net/public/uploads/indexManage/1528785019552.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    // background-image: url(https://khsmusicweb.blob.core.windows.net/public/uploads/indexManage/1528785019552.png);
+    // background-size: cover;
+    // background-repeat: no-repeat;
+    // background-position: center;
 
     nav {
         display: flex;
         align-items: center;
         gap: 15px;
         height: 75px;
+        position: relative;
+        z-index: 10;
         &.p-35{
             padding: 0 35px;
         }
@@ -85,6 +87,25 @@ header {
             }
         }
 
+    }
+
+    .swiper {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 0;
+    }
+
+    .swiper-slide {
+        background-position: center;
+        background-size: cover;
+    }
+
+    .swiper-slide img {
+        display: block;
+        width: 100%;
     }
 
     .go_down {
