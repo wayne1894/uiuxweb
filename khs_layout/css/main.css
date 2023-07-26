@@ -29,10 +29,13 @@ header nav.p-35 {
 header nav .nav_menu {
   display: none;
   position: absolute;
-  background-color: #f8f8f8;
   width: 150px;
 }
+header nav .nav_menu ol {
+  margin-top: 15px;
+}
 header nav .nav_menu a {
+  background-color: #f8f8f8;
   color: #000;
   display: block;
   padding: 10px 20px;
@@ -63,6 +66,7 @@ header nav .nav_left > li:hover .nav_menu {
 header nav .nav_right {
   display: flex;
   margin-left: auto;
+  margin-top: 17px;
 }
 header nav .nav_search {
   background-image: url(../img/search.svg);
@@ -73,6 +77,7 @@ header nav .nav_search {
   height: 30px;
   text-indent: -9999px;
   cursor: pointer;
+  margin-top: 17px;
 }
 header nav .nav_search:hover {
   opacity: 0.2;

@@ -18,9 +18,24 @@ header {
             display: none;
             // opacity: 0;
             position: absolute;
-            background-color: #f8f8f8;
             width: 150px;
+
+            // 解決方式一
+            // &::before{
+            //     content: "";
+            //     display: block;
+            //     width: 100%;
+            //     height: 15px;
+            //     background-color: transparent
+            // }
+            
+            //解決方式二
+            ol{
+                margin-top: 15px;
+            }
+
             a{
+                background-color: #f8f8f8;
                 color: #000;
                 display: block;
                 padding: 10px 20px;
@@ -53,6 +68,7 @@ header {
         .nav_right {
             display: flex;
             margin-left: auto;
+            margin-top: 17px;
         }
         .nav_search{
             background-image: url(../img/search.svg);
@@ -63,6 +79,7 @@ header {
             height: 30px;
             text-indent: -9999px;
             cursor: pointer;
+            margin-top: 17px;
             &:hover{
                 opacity: .2;
             }
