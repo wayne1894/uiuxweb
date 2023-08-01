@@ -434,4 +434,37 @@ header .bottom_area a:hover {
   overflow: hidden;
   letter-spacing: 0.075em;
   margin-top: 19px;
+}
+
+.news_bottom {
+  margin-top: 50px;
+}
+.news_bottom > .row {
+  background-color: #f0f0f0;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.news_bottom .news_bottom_img {
+  aspect-ratio: 3/2;
+  width: 100%;
+  height: 100%;
+}
+.news_bottom .news_bottom_img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.news_bottom .custom-style {
+  background: darkcyan;
+  border-left: 10px solid #d01a48;
+  padding: 20px;
+}
+
+@media (max-width: 991px) {
+  .news_bottom .custom-style {
+    border-left: none;
+    border-top: 10px solid #d01a48;
+  }
 }/*# sourceMappingURL=main.css.map */
