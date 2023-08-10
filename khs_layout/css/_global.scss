@@ -42,3 +42,46 @@ a{
      }
  }
 
+ 
+ .arrow{
+    display: inline-block;
+    width: 26px;
+    height: 17px;
+    position: relative;
+    top: 4px;
+    transition: all .2s cubic-bezier(0, 0.41, 0.58, 1);
+    transform: translateX(0);
+    opacity : 1;
+    &:before{
+        content: "";
+        width: 9px;
+        height: 9px;
+        border: 1px solid currentColor;
+        border-left: none;
+        border-bottom: none;
+        -moz-transform:rotate(45deg);
+        -webkit-transform:rotate(45deg);
+        -o-transform:rotate(45deg);
+        -ms-transform:rotate(45deg);
+        transform: rotate(45deg);
+        display: block;
+        position: absolute;
+        right: 9px;
+        bottom: 6px;
+      }
+    &:after{
+        content: "";
+        width: 12px;
+        height: 10px;
+        border-top: 1px solid currentColor;
+        display: block;
+        position: absolute;
+        right: 8px;
+        bottom: 1px; 
+    }
+  }
+
+ .arrow_wrap:hover .arrow{
+    transform: translateX(4px);
+    opacity : .75;
+ }

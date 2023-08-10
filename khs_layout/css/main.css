@@ -41,6 +41,45 @@ a {
   opacity: 1;
 }
 
+.arrow {
+  display: inline-block;
+  width: 26px;
+  height: 17px;
+  position: relative;
+  top: 4px;
+  transition: all 0.2s cubic-bezier(0, 0.41, 0.58, 1);
+  transform: translateX(0);
+  opacity: 1;
+}
+.arrow:before {
+  content: "";
+  width: 9px;
+  height: 9px;
+  border: 1px solid currentColor;
+  border-left: none;
+  border-bottom: none;
+  transform: rotate(45deg);
+  display: block;
+  position: absolute;
+  right: 9px;
+  bottom: 6px;
+}
+.arrow:after {
+  content: "";
+  width: 12px;
+  height: 10px;
+  border-top: 1px solid currentColor;
+  display: block;
+  position: absolute;
+  right: 8px;
+  bottom: 1px;
+}
+
+.arrow_wrap:hover .arrow {
+  transform: translateX(4px);
+  opacity: 0.75;
+}
+
 header {
   width: 100%;
   height: 100vh;
@@ -378,6 +417,45 @@ header .bottom_area a:hover {
   background-color: #d01a48;
   margin-top: 30px;
   margin-bottom: 50px;
+}
+.service h2 {
+  width: 100%;
+  height: 80px;
+  background-color: #fff;
+  text-align: right;
+  position: relative;
+}
+.service h2::before {
+  content: "";
+  width: 10%;
+  height: 77px;
+  display: block;
+  background-color: #d01a48;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.service h2 .container-lg {
+  position: relative;
+}
+.service h2 .container-lg span {
+  z-index: 1;
+  position: relative;
+  top: 20px;
+  letter-spacing: 10px;
+  right: 18px;
+  color: #fff;
+}
+.service h2 .container-lg::before {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 105px;
+  top: -21px;
+  right: 0;
+  z-index: 1;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 100'%3E%3Cstyle%3E.st0%7Bfill:%23d01a48%7D%3C/style%3E%3Cpath class='st0' d='M0 100c35.1 0 76.8-5.8 123.9-22.2C221.4 43.7 292.1 0 377 0c51.3 0 74.6 22.9 103 22.9V100H0z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
 }
 
 .service_parent {
