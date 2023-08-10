@@ -1,3 +1,7 @@
+:root {
+  --primary: #d01a48;
+}
+
 ul, ol {
   list-style-type: none;
   margin: 0;
@@ -7,6 +11,34 @@ ul, ol {
 a {
   color: #fff;
   text-decoration: none;
+}
+
+.zoom {
+  overflow: hidden;
+}
+.zoom .inner {
+  position: relative;
+}
+.zoom .inner img, .zoom .inner.bg {
+  transition: transform 0.42s cubic-bezier(0.15, 0.46, 0.57, 1);
+}
+.zoom .inner::before {
+  content: "";
+  transition: opacity 0.42s cubic-bezier(0.15, 0.46, 0.57, 1);
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.25);
+}
+.zoom:hover .inner img, .zoom:hover .inner.bg {
+  transform: scale(1.08, 1.08);
+}
+.zoom:hover .inner::before {
+  opacity: 1;
 }
 
 header {
@@ -288,7 +320,17 @@ header .bottom_area a:hover {
   margin-bottom: 5px;
   border-radius: 3px;
   position: relative;
-  transition: transform 0.5s;
+  transition: transform 0.5s cubic-bezier(0, 1.65, 0.84, -0.25);
+}
+
+.nav_mobile:not(.collapsed) .menu .line0 {
+  display: none;
+}
+.nav_mobile:not(.collapsed) .menu .line1 {
+  transform: rotate(45deg) scale(1.1);
+}
+.nav_mobile:not(.collapsed) .menu .line2 {
+  transform: translateY(-8px) rotate(-45deg) scale(1.1);
 }
 
 @media (max-width: 991px) {
@@ -298,6 +340,38 @@ header .bottom_area a:hover {
     left: 0;
     top: 60px;
     flex-direction: column;
+  }
+  header nav .nav_left > li {
+    background-color: #fff;
+    display: block;
+    width: 100%;
+    text-align: left;
+    height: 58px;
+    line-height: 58px;
+    border-bottom: 1px solid #bbb;
+    border-radius: inherit;
+  }
+  header nav .nav_left > li a {
+    color: #000;
+    padding: 0 20px;
+  }
+  header nav .nav_left > li a::before {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 58px;
+    position: absolute;
+    right: 0;
+    border-left: 1px solid #bbbbbb;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='7.102' height='10.769' viewBox='0 0 7.102 10.769'%3E%3Cpath fill='%23646464' d='M.641 10.769L0 10l5.539-4.616L0 .769.641 0l6.461 5.384z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  header nav .nav_left > li:hover {
+    background-color: #fff;
+  }
+  header nav .nav_left > li:hover .nav_menu {
+    display: none;
   }
 }
 .service {
@@ -377,6 +451,9 @@ header .bottom_area a:hover {
   padding-top: 25px;
   font-weight: bold;
   border-bottom-right-radius: 20px;
+}
+.service_parent .service_text .service_more a {
+  color: #000;
 }
 
 .news_parent {
