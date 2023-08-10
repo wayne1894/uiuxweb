@@ -133,6 +133,33 @@ header {
         text-indent: -9999px;
         background-size: cover;
         background-image: url("data:image/svg+xml,%3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 136 47' style='enable-background:new 0 0 136 47;' xml:space='preserve'%3E%3Cstyle type='text/css'%3E .st0%7Bfill:none;stroke:%23FFFFFF;stroke-width:2;stroke-miterlimit:10;%7D%0A%3C/style%3E%3Cg%3E%3Cimage style='overflow:visible;opacity:0.25;' width='136' height='47' xlink:href='3EF62892.png' %3E%3C/image%3E%3Cg%3E%3Cpath class='st0' d='M13,13l42.4,13.1c5.3,1.6,13.9,1.6,19.1,0L117,13'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    
+        animation: arrmove .95s infinite alternate;
+        -moz-animation: arrmove .95s infinite alternate;
+        -webkit-animation: arrmove .95s infinite alternate;
+
+        animation-timing-function: ease-in-out;
+        @-webkit-keyframes arrmove {
+            0% {
+                transform:translateY(0px)
+            }
+
+            100% {
+                transform:translateY(14px)
+            }
+        }
+
+        @keyframes arrmove {
+            0% {
+                transform:translateY(0px)
+            }
+
+            100% {
+                transform:translateY(14px)
+            }
+        }
+
+    
     }
 
     .bottom_area {

@@ -118,3 +118,24 @@
       }
     }
   }
+
+
+  
+@media(min-width: $xxl){
+  .service{
+    h2{
+      &::before{
+        width: 15%;
+      }
+    }
+  }
+}
+@media(min-width: 1800px){ 
+  .service{
+    h2{
+      &::before{
+        width: 27%;
+      }
+    }
+  }
+}
