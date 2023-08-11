@@ -17,7 +17,8 @@ turtle.setStrokeColorRGB(255, 255, 255);//畫白色的線
 var window_width = window.innerWidth;
 var window_height = window.innerHeight;
 var gap = 10;
-var x_number = 30;
+var x_number = 20;
+x_number = Math.floor(Math.random() * x_number) + 1;
 var start_gap_width = 20;
 var start_gap_height = 20;
 
@@ -30,21 +31,31 @@ var y_number = (window_height - start_gap_height)
 / (square_width + gap);
 y_number = parseInt(y_number)
 
+const r = Math.floor(Math.random() * 256); // 隨機生成 0 到 255 之間的整數
+const g = Math.floor(Math.random() * 256);
+const b = Math.floor(Math.random() * 256);
+
+var totalNumbers = x_number * y_number;
+var randomIndex = Math.floor(Math.random() * totalNumbers);
+var randomInteger = randomIndex + 1;  // 如果你想要隨機整數從 1 開始計數
+
+var box_index = 0;
 for(var i=0;i<y_number;i++){
    var _y = start_gap_height + (square_width + gap) * i;
    turtle.setPosition(start_gap_width,_y);
    for(var j=0;j<x_number;j++){
      var _x = start_gap_width + (square_width + gap) * j;
      turtle.setPosition(_x,_y);
-     print_square()
+     box_index = box_index + 1;
+     print_square(box_index)
    }
 }
 
 
-function print_square(){
+function print_square(box_index){
     var square_angle = 90;
 
-    turtle.setFillStyle(getRandomColor());
+    turtle.setFillStyle(getRandomRGBA(box_index));
     turtle.beginPath();
 
     turtle.right(square_angle)
@@ -68,11 +79,11 @@ function getRandomColor() {
     return color;
 }
 
-function getRandomRGBA() {
-  const r = Math.floor(Math.random() * 256); // 隨機生成 0 到 255 之間的整數
-  const g = Math.floor(Math.random() * 256);
-  const b = Math.floor(Math.random() * 256);
-  const a = Math.random(); // 隨機生成 0 到 1 之間的浮點數
+function getRandomRGBA(box_index) {
+  var a = 1;
+  if(box_index == randomInteger){
+    a = 0.9
+  }
 
   return `rgba(${r},${g},${b},${a})`;
 }
