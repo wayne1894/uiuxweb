@@ -11,7 +11,7 @@
 <script src="https://unpkg.com/real-turtle/build/helpers/simple.js"></script>
 
 <script>
-turtle.setSpeed(0.95); //設定速度
+turtle.setSpeed(1); //設定速度
 
 var window_width = window.innerWidth;
 var window_height = window.innerHeight;
@@ -28,28 +28,42 @@ square_width = parseInt(square_width);
 var y_number = 10;
 
 for(var i=0;i<y_number;i++){
-    // alert(i)
+   var _y = start_gap_height + (square_width + gap) * i;
+   turtle.setPosition(start_gap_width,_y);
+   for(var j=0;j<x_number;j++){
+     var _x = start_gap_width + (square_width + gap) * j;
+     turtle.setPosition(_x,_y);
+     print_square()
+   }
 }
 
 
+function print_square(){
+    var square_angle = 90;
 
+    turtle.setFillStyle(getRandomColor());
+    turtle.beginPath();
 
-var square_angle = 90;
+    turtle.right(square_angle)
+    turtle.fd(square_width)
+    turtle.right(square_angle)
+    turtle.fd(square_width)
+    turtle.right(square_angle)
+    turtle.fd(square_width)
+    turtle.right(square_angle)
+    turtle.fd(square_width)
 
-turtle.setFillStyle("#FF0000");
-turtle.beginPath();
+    turtle.fill();
+}
 
-turtle.right(square_angle)
-turtle.fd(square_width)
-turtle.right(square_angle)
-turtle.fd(square_width)
-turtle.right(square_angle)
-turtle.fd(square_width)
-turtle.right(square_angle)
-turtle.fd(square_width)
-
-turtle.fill();
-
+function getRandomColor() {
+    var letters = '0123456789ABCDEF';
+    var color = '#';
+    for (var i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+}
 
 </script>
 </body>
