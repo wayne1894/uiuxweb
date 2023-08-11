@@ -13,11 +13,32 @@
 <script>
 turtle.setSpeed(0.95); //設定速度
 
-var square_width = 60;
+var window_width = window.innerWidth;
+var window_height = window.innerHeight;
+var gap = 10;
+var x_number = 30;
+var start_gap_width = 20;
+var start_gap_height = 20;
+
+var square_width =  (window_width - (x_number * gap)
+                    - (start_gap_width * 2)) / x_number;
+
+square_width = parseInt(square_width);
+
+var y_number = 10;
+
+for(var i=0;i<y_number;i++){
+    // alert(i)
+}
+
+
+
+
 var square_angle = 90;
 
+turtle.setFillStyle("#FF0000");
+turtle.beginPath();
 
-
 turtle.right(square_angle)
 turtle.fd(square_width)
 turtle.right(square_angle)
@@ -27,6 +48,7 @@ turtle.fd(square_width)
 turtle.right(square_angle)
 turtle.fd(square_width)
 
+turtle.fill();
 
 
 </script>
