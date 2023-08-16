@@ -98,6 +98,23 @@ header {
                 opacity: .2;
             }
         }
+        .logo_fixed{
+            display: none;
+        }
+        &.fixed{
+            position: fixed;
+            background-color: #fff;
+            z-index: 99999;
+            a{
+                color: #000;
+            }
+            .logo>img:first-child{
+                display: none;
+            }
+            .logo_fixed{
+                display: block;
+            }
+        }
 
     }
 

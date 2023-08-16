@@ -4,3 +4,19 @@
 @import '_header';
 @import '_service';
 @import '_news';
+
+#go_top{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    color: #fff;
+    opacity: 0;
+    z-index: 9999;
+}
+#go_top.show{
+    opacity: 1;
+}

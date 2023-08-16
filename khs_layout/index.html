@@ -11,9 +11,10 @@
 </head>
 <body>
     <header>
-      <nav class="container-fluid p-35">
+      <nav id="nav" class="container-fluid p-35">
         <a class="logo" href="">
             <img src="img/LOGO1.svg" alt="">
+            <img class="logo_fixed" src="https://khsmusicweb.blob.core.windows.net/public/src/static/images/LOGO3.svg" alt="">
         </a>
         <ul id="navbarCollapse" class="nav_left collapse navbar-collapse d-lg-flex">
             <li>
@@ -140,7 +141,7 @@
             <p data-wow-delay="0.9s" data-wow-duration="1s" class="wow animate__animated animate__fadeInLeft">功學社取自「貢獻」、「學校」、「社會」，我們希望用優質的樂器與熱誠的音樂教育，將藝術的種子散布在台灣各處，同時走向國際名揚台灣精神。</p>
             <a data-wow-delay="1.2s" data-wow-duration="1s" class="wow animate__animated animate__fadeInLeft">關於我們</a>
       </div>
-      <a id="go_down" class="go_down" href="#">down</a>
+      <a id="go_down" class="go_down" href="#news">down</a>
         
     </header>
     <main>
@@ -193,7 +194,7 @@
               </div>
            </div>
         </section>
-        <section class="news">
+        <section id="news" class="news">
             <div class="container-lg">
                 <div class="row gy-3">
                     <div class="col-sm-6 col-md-4 col-lg-3">
@@ -297,7 +298,7 @@
                 </div>
             </div>
         </section>
-
+        <a id="go_top" href="#">往上</a>
     </main>
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
@@ -318,6 +319,25 @@
   </script>
   <script>
      new WOW().init();
-  </script>      
+  </script>
+  <script>
+    document.addEventListener("scroll",function(){
+      //console.log(window.scrollY,"這是目前的捲軸位置")
+      if(window.scrollY>70){
+        //我要把我的nav 變成固定，並設定白色背景
+        document.getElementById("nav").classList.add("fixed")
+      }else{
+        //還原
+        document.getElementById("nav").classList.remove("fixed")
+      }
+
+      if(window.scrollY<150){
+        document.getElementById("go_top").classList.remove("show")
+      }else{
+        document.getElementById("go_top").classList.add("show")
+      }
+
+    })
+  </script>  
 </body>
 </html>
