@@ -119,7 +119,8 @@
         id("airplane").addEventListener("click", function () {
             alert(1)
         })
-        document.addEventListener("click",function(event){
+        //click
+        document.addEventListener("mousemove",function(event){
             // alert(event.clientX)
             // alert(event.clientY)
             id("airplane").style.top = event.clientY + "px";
