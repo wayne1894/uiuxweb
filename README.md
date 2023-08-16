@@ -20,5 +20,5 @@ UI/UX創新應用暨互動網站開發實戰班
 ### [16 Javascript 創意程式練習題 - 內建物件](https://docs.google.com/presentation/d/1_nYnisdMsaGvcRvr2V261YZhr9oPrie6OK672FGjZpM/edit?usp=sharing)
 ### [17 了解版本控管](https://docs.google.com/presentation/d/1ZsHeq90WHfhKPU7UQtRuEHJ5Ki2OasdN_sQsnH2ksW8/)
 ### [18 web 動畫技術應用與研究](https://docs.google.com/presentation/d/1sh851jgAk4PxVCUCJtvMtO67PMg4dY42MKlvmk3i-fk/edit?usp=sharing)
-
+### [19 web 動畫技術應用與研究 - gsap](https://docs.google.com/presentation/d/1EHkNV9KiWs0-X2UopjHOr44FnaozsBeQ2KbDHTCft3M/edit?usp=sharing)
 
