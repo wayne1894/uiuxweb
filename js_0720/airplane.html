@@ -31,11 +31,30 @@
             left: 0;
             top: 0
         }
+        .bullet{
+            width: 7px;
+            height: 15px;
+            background: #000000;
+            position: absolute;
+            top: 37px;
+            left: 88px;
+            z-index: -1;
+            opacity: 1;
+        }
+        .bullet.animate{
+            transition: all 1s ease-in-out
+        }
+        .bullet.shot{
+            top: -20px;
+            opacity:0;
+        }
+
     </style>
 </head>
 
 <body>
     <div id="airplane">
+        <div class="bullet"></div>
         <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="100pt" height="100pt"
             viewBox="0 0 1280.000000 1135.000000">
             <g transform="translate(0.000000,1135.000000) scale(0.100000,-0.100000)" stroke="none">
@@ -106,7 +125,7 @@
                 document.getElementById("airplane").style.fill = getRandomColor()
                 document.getElementById("airplane").style.left = "250px";
                 document.getElementById("airplane").style.top = "250px";
-                document.getElementById("airplane").style.transform = "rotate(135deg)"
+                //document.getElementById("airplane").style.transform = "rotate(135deg)"
             }
 
         }
@@ -120,12 +139,29 @@
             alert(1)
         })
         //click
-        document.addEventListener("mousemove",function(event){
+        document.addEventListener("click",function(event){
             // alert(event.clientX)
             // alert(event.clientY)
             id("airplane").style.top = event.clientY + "px";
             id("airplane").style.left = event.clientX + "px"
         })
+
+        id("shot").addEventListener("click",function(event){
+            event.stopPropagation();
+            document.querySelectorAll(".bullet")[0].classList.add("shot")
+            document.querySelectorAll(".bullet")[0].classList.add("animate")
+            setTimeout(function(){
+                document.querySelectorAll(".bullet")[0].classList.remove("shot")
+                document.querySelectorAll(".bullet")[0].classList.remove("animate")
+            },1000)
+        })
+        // 語法同上
+        // id("shot").addEventListener("click",(event) => {
+
+        // })
+        
+
+
 
         function move(direction) {
             var speed = 200;
