@@ -30,14 +30,40 @@ function wheel(e){
 function move_page(page_index){
   gsap.to(window, 0.5, {
       scrollTo: section[page_index],
-      onStart : function(){},
+      onStart : function(){
+        if(page_index!=last_page_index){
+          document.querySelectorAll("#section_4 .s_left")[0].classList.remove("fixed");      
+        }
+        gsap.set("#section_4 .s_left",{
+          opacity:0
+        })
+  
+      },
       onComplete : function(){
-      page_now = page_index;
-      setTimeout(function(){
-          scroll_start = false;
-      },1000)
+
+        if(page_index == 1){ // to page2 action
+          gsap.to(".t_cell",.7,{ 
+              opacity: 1,
+              top: "30px",
+              delay: 0.5
+          })
+        }
+
+        if(page_index == last_page_index){
+          document.querySelectorAll("#section_4 .s_left")[0].classList.add("fixed");
+        }
+        gsap.to("#section_4 .s_left",{
+                opacity:1
+        })
+  
+
+        page_now = page_index;
+        setTimeout(function(){
+            scroll_start = false;
+        },1000)
       }
   });
 }
 
 window.addEventListener("wheel",wheel)
+
