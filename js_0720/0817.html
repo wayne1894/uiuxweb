@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *,
+        *:before,
+        *:after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .car{
+            top:50%;
+            position: absolute;
+        }
+        .car img{
+            width: 100px;
+        }
+        .ball{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: blue;
+            position: absolute;
+            top: 10%;
+            left: 50%;
+        }
+      
+    </style>
+</head>
+
+<body>
+
+<div id="car" class="car">
+    <img src="https://www.iconpacks.net/icons/2/free-car-icon-2901-thumb.png">
+</div>
+<div class="ball"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script>
+    var car = gsap.to(".car", {
+         x:500,
+         y:-50,
+         duration:3,
+         yoyo: false,
+         repeat: -1,
+         rotation:"0deg",
+         ease: "power2.out",
+         onComplete: function(){
+            gsap.to(".car", {
+                x: 300,
+                y: 200,
+                duration:3,
+            })
+        }
+    })
+    var ball = gsap.from(".ball",{
+        y:200,
+        duration:3,
+        delay: 1,
+        ease:"bounce.out",
+        yoyo: true,
+        repeat: -1,
+        backgroundColor: "red",
+        onComplete: function(){
+           
+        }
+    })
+</script>
+</body>
+
+</html>

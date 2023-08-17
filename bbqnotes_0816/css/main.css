@@ -66,3 +66,33 @@ section{
     background-image: url("../img/bg4.svg");
 }
 
+
+
+#section_2>div{
+    width: 100%;
+    height: 100%;
+}
+#section_2 h4{
+    display: none;
+  }
+#section_2 .t_table{
+    display: table;
+    font-size: 2rem;
+    color: #ffffff;
+    letter-spacing :0.05rem;
+    line-height: 3rem;
+    width: 68%;
+    margin: 0 auto;
+}
+#section_2 .t_cell{
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: bold;
+    position: relative;
+    opacity: 0;
+    top: 0px;
+}
+.is_type{
+    display: inline;
+}
